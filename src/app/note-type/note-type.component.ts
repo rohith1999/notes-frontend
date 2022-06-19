@@ -15,6 +15,8 @@ export class NoteTypeComponent implements OnInit {
       noteData: ""
   };
   
+  isDivVisible=false;
+  
   constructor(private route: ActivatedRoute, private noteService: NoteService) { }
 
   ngOnInit(): void {
@@ -23,6 +25,7 @@ export class NoteTypeComponent implements OnInit {
 
         this.note.noteId=String(paramMap.get('note_id'));
         this.getNote(this.note.noteId);
+
       
       });
 
@@ -32,6 +35,10 @@ export class NoteTypeComponent implements OnInit {
   private createNote( note: Note){
     this.noteService.createNote(note).subscribe(data =>{
       this.note.noteData=data.noteData;
+      this.isDivVisible=true;
+      setTimeout(() => {
+        this.isDivVisible=false;
+    }, 3000);
     });
   }
 
