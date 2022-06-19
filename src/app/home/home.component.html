@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img class="home-image img-fluid" src="/assets/images/share.webp">
+        </div>
+        <div class="col">
+            <div class="h-description">
+                <h3 class="home-title">Share on the GO!</h3>
+                <p>
+                    Instantly share your bits of code, assignments etc. without any second thoughts.
+                </p>
+            </div>
+
+            <form class="load-url" (ngSubmit)="onSubmit()">
+
+                <p class="url-display">{{url}}</p>
+                <input name="url-input"  class="url-input" [(ngModel)] = "route" type="text" placeholder="route" />
+                <button class="btn btn-primary" type="submit">Submit</button>
+
+            </form>
+
+
+
+        </div>
+
+    </div>
+</div>

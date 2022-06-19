@@ -7,6 +7,7 @@ import { NoteTypeComponent } from './note-type/note-type.component';
 import { PageNFoundComponent } from './page-n-found/page-n-found.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     NoteTypeComponent,
-    PageNFoundComponent
+    PageNFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

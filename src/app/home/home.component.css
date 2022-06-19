@@ -1,0 +1,25 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.home-image{
+    width: 80%;
+}
+
+.home-title{
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+.h-description{
+    margin-top: 2%;
+}
+
+.url-display{
+    display: inline;
+}
+
+.url-input, .btn{
+    margin: 1%;
+}
+
