@@ -9,7 +9,7 @@ import { Note } from './note';
 })
 export class NoteService {
 
-  baseUrl = environment.production;
+  baseUrl = environment.baseUrl;
 
   constructor(private httpClient: HttpClient) { }
 
