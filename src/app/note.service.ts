@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -8,7 +9,7 @@ import { Note } from './note';
 })
 export class NoteService {
 
-  baseUrl = "https://133f-49-205-128-142.ngrok.io/note";
+  baseUrl = environment.production;
 
   constructor(private httpClient: HttpClient) { }
 
