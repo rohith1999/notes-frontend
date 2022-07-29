@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  baseUrl: 'https://qnote.herokuapp.com/'
+  baseUrl: 'https://qnote-01.herokuapp.com/'
 };
