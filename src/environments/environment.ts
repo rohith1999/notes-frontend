@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://qnote-01.herokuapp.com/'
+  baseUrl: ''
 };
 
 /*
