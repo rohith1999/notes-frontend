@@ -8,6 +8,8 @@ import { PageNFoundComponent } from './page-n-found/page-n-found.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { QnoteFeaturesComponent } from './qnote-features/qnote-features.component';
+import { QnoteCardComponent } from './qnote-card/qnote-card.component';
 
 @NgModule({
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
@@ -16,7 +18,9 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     NoteTypeComponent,
     PageNFoundComponent,
-    HomeComponent
+    HomeComponent,
+    QnoteFeaturesComponent,
+    QnoteCardComponent
   ],
   imports: [
     BrowserModule,
