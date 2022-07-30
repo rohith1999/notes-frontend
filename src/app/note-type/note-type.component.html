@@ -1,13 +1,11 @@
 
 
-<form (ngSubmit)="onSubmit()">
-    <textarea type="text"  name="txtarea" [(ngModel)] = "note.noteData" >
+<!-- <form #formType (ngSubmit)="onSubmit()"> -->
+    <textarea #textNote type="text"  name="txtarea" [(ngModel)] = "note.noteData" (keyup)="onKeySearch($event)">
     </textarea>
 
-    <button class="btn-primary" type="submit">Submit</button>
-</form>
+    <!-- <button class="btn-primary"  type="submit">Submit</button> -->
+<!-- </form> -->
 
 
-<div class="alert alert-success alert-dismissible fade show" role="alert" [ngStyle]="{'visibility':isDivVisible ? 'visible' : 'hidden'}" style="margin: 2%;">
-    <strong>Success</strong>
-  </div>
+
