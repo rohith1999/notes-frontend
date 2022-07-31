@@ -27,3 +27,16 @@ p{
     font-family: 'Montserrat', sans-serif;
 
 }
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+img{
+    text-align: center;
+}
+
+.nav-item{
+    margin: 1%;
+}

@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
 
 textarea {
@@ -12,3 +16,17 @@ textarea {
   .btn{
     margin: 1%;
 }
+
+
+nav{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+}
+
+
+.nav-item{
+  margin: 1%;
+}
+
+
+

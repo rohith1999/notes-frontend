@@ -1,4 +1,4 @@
 export class Note{
-    noteId!: String;
-    noteData!: String;
+    noteId!: string;
+    noteData!: string;
 }

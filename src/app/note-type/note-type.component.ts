@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NoteService } from '../note.service';
+
 import { Note } from '../note';
 import {
   debounceTime,
@@ -75,4 +76,7 @@ export class NoteTypeComponent implements OnInit {
       }
     }, 1000);
   }
+
+
+
 }

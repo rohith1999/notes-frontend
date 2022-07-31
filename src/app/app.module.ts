@@ -11,6 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { QnoteFeaturesComponent } from './qnote-features/qnote-features.component';
 import { QnoteCardComponent } from './qnote-card/qnote-card.component';
 
+//clipboard
+import {ClipboardModule} from '@angular/cdk/clipboard';
+
+
 @NgModule({
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
 
@@ -26,7 +30,8 @@ import { QnoteCardComponent } from './qnote-card/qnote-card.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

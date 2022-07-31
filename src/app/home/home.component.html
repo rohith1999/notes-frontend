@@ -1,3 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+
+            <img src="/assets/images/notes-icon.png" alt="" width="30" height="24">
+            QNote</a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li>
+                <!-- <a class="nav-link">Contact</a> -->
+
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm">
@@ -14,7 +42,7 @@
             <form class="load-url" (ngSubmit)="onSubmit()">
 
                 <p class="url-display">{{url}}</p>
-                <input name="url-input"  class="url-input" [(ngModel)] = "route" type="text" placeholder="route" />
+                <input name="url-input" class="url-input" [(ngModel)]="route" type="text" placeholder="route" />
                 <button class="btn btn-primary" type="submit">Submit</button>
 
             </form>
@@ -24,15 +52,15 @@
             </div>
         </div>
 
-        
+
 
         <div>
-            <app-qnote-features></app-qnote-features>
+            <app-qnote-features id="features"></app-qnote-features>
         </div>
-       
+
 
         &nbsp;
-        
+
 
     </div>
 </div>
