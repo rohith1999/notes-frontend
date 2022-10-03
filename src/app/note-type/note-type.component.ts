@@ -1,15 +1,10 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NoteService } from '../note.service';
+import * as CryptoJS from 'crypto-js';  
+
 
 import { Note } from '../note';
-import {
-  debounceTime,
-  distinctUntilChanged,
-  fromEvent,
-  map,
-  Observable,
-} from 'rxjs';
 
 @Component({
   selector: 'app-note-type',
@@ -18,6 +13,10 @@ import {
 })
 export class NoteTypeComponent implements OnInit {
   timeout: any = null;
+
+  encryptedMessage: any = null;
+  decryptedMessage: any = null;
+
 
   note: Note = {
     noteId: '',
@@ -58,6 +57,14 @@ export class NoteTypeComponent implements OnInit {
   //   this.createNote(this.note);
   // }
 
+  
+
+  copyToClipboard(noteData: string){
+     this.encryptedMessage = CryptoJS.AES.encrypt( noteData.trim(), "rohith").toString();
+    console.log(CryptoJS.AES.decrypt( this.encryptedMessage, "rohith").toString(CryptoJS.enc.Utf8))
+    return this.encryptedMessage
+  }
+
   noteChanged(event: any) {
     // setTimeout(() => {
 
@@ -72,7 +79,6 @@ export class NoteTypeComponent implements OnInit {
     this.timeout = setTimeout(function () {
       if (event.keyCode != 13) {
         $this.createNote($this.note);
-        // console.log("api call made");
       }
     }, 1000);
   }

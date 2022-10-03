@@ -13,6 +13,7 @@ import { QnoteCardComponent } from './qnote-card/qnote-card.component';
 
 //clipboard
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import { BlockCopyDirective } from './note-type/block-copy.directive';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     PageNFoundComponent,
     HomeComponent,
     QnoteFeaturesComponent,
-    QnoteCardComponent
+    QnoteCardComponent,
+    BlockCopyDirective,
   ],
   imports: [
     BrowserModule,

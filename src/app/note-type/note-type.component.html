@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-link">
-                <a [cdkCopyToClipboard]="note.noteData" class="bi bi-clipboard-fill"></a>
+                <a [cdkCopyToClipboard]="copyToClipboard(note.noteData)" class="bi bi-clipboard-fill"></a>
             </li>
         </ul>
     </div>
@@ -24,7 +24,7 @@
 
 
 <!-- <form #formType (ngSubmit)="onSubmit()"> -->
-    <textarea #textNote type="text"  name="txtarea" [(ngModel)] = "note.noteData" (keyup)="onKeySearch($event)">
+    <textarea  #textNote type="text"  name="txtarea" [(ngModel)] = "note.noteData" (keyup)="onKeySearch($event)" appBlockCopy>
     </textarea>
 
     <!-- <button class="btn-primary"  type="submit">Submit</button> -->
